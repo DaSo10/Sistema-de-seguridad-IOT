@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833580085876",
+    "firebase_url": "https://iot-security-6b2f9.firebaseio.com",
+    "project_id": "iot-security-6b2f9",
+    "storage_bucket": "iot-security-6b2f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833580085876:android:bb74038882be50cf59d721",
+        "android_client_info": {
+          "package_name": "com.example.iot_security"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833580085876-i0kakgu1heao2lkrck5pemekmnng59nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3hexSb-VjP0347rffoBSiTNoEt84a7o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833580085876-i0kakgu1heao2lkrck5pemekmnng59nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
