@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginNow extends AppCompatActivity {
     private EditText tcorreo;
     private EditText tcontraseña;
     private Button btninicio;
@@ -26,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_now);
+
         mAuth= FirebaseAuth.getInstance();
-        tcorreo=(EditText) findViewById(R.id.edtcorreo);
-        tcontraseña=(EditText) findViewById(R.id.edtcontraseña);
-        btninicio=(Button) findViewById(R.id.btnAgregar);
+        tcorreo=(EditText) findViewById(R.id.tvusername);
+        tcontraseña=(EditText) findViewById(R.id.tvpassword);
+        btninicio=(Button) findViewById(R.id.btn_login);
 
         btninicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 if (!correo.isEmpty() && !contraseña.isEmpty()){
                     loginUser();
                 }else
-                    {
-                Toast.makeText(MainActivity.this, "complete los campos vacios", Toast.LENGTH_SHORT).show();
-            }
+                {
+                    Toast.makeText(LoginNow.this, "complete los campos vacios", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -52,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(MainActivity.this, Menu.class));
+                    startActivity(new Intent(LoginNow.this, Menu2.class));
                     finish();
                 } else {
-                    Toast.makeText(MainActivity.this, "no  se pudo iniciar sesion ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginNow.this, "no  se pudo iniciar sesion ", Toast.LENGTH_SHORT).show();
                 }
             }
 

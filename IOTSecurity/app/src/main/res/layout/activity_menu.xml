@@ -5,68 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".MainActivity">
+    tools:context=".Menu">
 
     <Button
         android:id="@+id/btnAgregar"
-        android:layout_width="138dp"
-        android:layout_height="107dp"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
         android:background="@drawable/boton_transparente"
         android:text="Gestionar Usuarios"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
-
-    <Button
-        android:id="@+id/btnAgregar2"
-        android:layout_width="138dp"
-        android:layout_height="107dp"
-        android:background="@drawable/boton_transparente"
-        android:text="Gestionar Puerta"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
-
-    <Button
-        android:id="@+id/btnAgregar3"
-        android:layout_width="138dp"
-        android:layout_height="107dp"
-        android:background="@drawable/boton_transparente"
-        android:text="Gestionar Sistema"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        android:id="@+id/btnAgregar2"
+        android:layout_width="126dp"
+        android:layout_height="96dp"
+        android:background="@drawable/boton_transparente"
+        android:text="Gestionar Puerta"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <Button
+        android:id="@+id/btnAgregar3"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:background="@drawable/boton_transparente"
+        android:text="Gestionar Sistema"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
 
     <Button
         android:id="@+id/btnAgregar4"
-        android:layout_width="138dp"
-        android:layout_height="107dp"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
         android:background="@drawable/boton_transparente"
         android:text="Usuarios en Casa"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.765" />
 
     <Button
         android:id="@+id/btnAgregar5"
-        android:layout_width="138dp"
-        android:layout_height="107dp"
+        android:layout_width="124dp"
+        android:layout_height="101dp"
         android:background="@drawable/boton_transparente"
         android:text="Ayuda"
         android:textColor="#ffffff"
@@ -75,6 +75,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
+        app:layout_constraintVertical_bias="0.993" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
