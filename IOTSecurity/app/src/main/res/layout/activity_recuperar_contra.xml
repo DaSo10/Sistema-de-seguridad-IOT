@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
-    tools:context=".LoginNow">
+    tools:context=".RecuperarContra">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_left"
         android:layout_width="wrap_content"
@@ -39,10 +39,11 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="180dp"
-        android:fontFamily="@font/bunglerlight"
-        android:text="Casa Segura"
+
+        android:fontFamily="sans-serif-black"
+        android:text="Recuperar Contraseña"
         android:textColor="@color/login_form_details"
-        android:textSize="60sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@id/guideline_right"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
@@ -52,7 +53,7 @@
         android:id="@+id/tvuserREC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/et_bg"
         android:hint="Correo Electrónico"
         android:inputType="textEmailAddress"
@@ -64,76 +65,50 @@
         app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/icon" />
 
-    <EditText
-        android:id="@+id/tvpassword2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/et_bg"
-        android:drawableEnd="@drawable/ic_eye"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        android:textColorHint="@color/login_form_details"
-        android:textColor="@color/login_form_details"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
-
     <Button
         android:id="@+id/btn_Recuperar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/btn_bg"
-        android:text="Ingresar"
-        android:textSize="20dp"
+        android:text="Enviar"
         android:textAllCaps="false"
         android:textColor="@color/login_form_details_medium"
+        android:textSize="25dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/tvpassword2" />
-
-    <TextView
-        android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="¿Olvidaste tu contraseña?"
-        android:textColor="@color/login_form_details"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/btn_Recuperar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
 
     <View
         android:id="@+id/line1"
         android:layout_width="120dp"
         android:layout_height="1dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="45dp"
         android:background="@color/login_form_details_medium"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Recuperar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
 
     <View
         android:id="@+id/line2"
         android:layout_width="120dp"
         android:layout_height="1dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/login_form_details_medium"
         app:layout_constraintEnd_toEndOf="@id/guideline_right"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Recuperar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
 
     <View
         android:id="@+id/line3"
         android:layout_width="310dp"
         android:layout_height="1dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="48dp"
         android:background="@color/login_form_details_medium"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Recuperar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

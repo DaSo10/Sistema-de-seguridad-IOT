@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AgregarUsuario2"></activity>
-        <activity android:name=".Menu2" />
+        <activity android:name=".RecuperarContra"></activity>
+        <activity android:name=".AgregarUsuario2" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".MenuGU" />
         <activity android:name=".AgregarUsuario" />
+        <activity android:name=".Menu2" />
+        <activity android:name=".ActualizarUsuario" />
+        <activity android:name=".ListaUsuarios" />
         <activity android:name=".Menu" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".LoginNow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

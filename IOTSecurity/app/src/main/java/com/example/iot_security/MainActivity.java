@@ -1,8 +1,5 @@
 package com.example.iot_security;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +7,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private EditText tcorreo;
@@ -23,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
     private String correo = "";
     private String contraseña= "";
     FirebaseAuth mAuth;
+    FirebaseDatabase database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mAuth= FirebaseAuth.getInstance();
         tcorreo=(EditText) findViewById(R.id.edtcorreo);
         tcontraseña=(EditText) findViewById(R.id.edtcontraseña);

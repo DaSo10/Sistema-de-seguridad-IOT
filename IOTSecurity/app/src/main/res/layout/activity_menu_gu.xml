@@ -102,7 +102,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAjustes"
+            android:id="@+id/cardActUsuario"
             android:layout_width="20dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -144,7 +144,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAyuda"
+            android:id="@+id/cardElUsuario"
             android:layout_width="20dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"

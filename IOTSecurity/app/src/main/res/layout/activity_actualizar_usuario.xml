@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:background="@drawable/bg_login"
-    tools:context=".AgregarUsuario2">
+    android:background="@drawable/bg_login"
+    tools:context=".ActualizarUsuario">
+
     <RelativeLayout
         android:id="@+id/idLayoutFondo"
         android:layout_width="match_parent"
@@ -51,7 +52,7 @@ android:background="@drawable/bg_login"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="-2dp"
         android:orientation="vertical">
@@ -60,25 +61,29 @@ android:background="@drawable/bg_login"
             android:id="@+id/tvnombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="0dp"
             android:background="@drawable/et_bg"
             android:hint="Nombre"
-            android:padding="16dp"
+            android:padding="10dp"
+            android:textSize="15dp"
             android:textColor="@color/login_form_details"
             android:textColorHint="@color/login_form_details"
             app:layout_constraintEnd_toStartOf="@id/guideline_right"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
             app:layout_constraintTop_toBottomOf="@+id/idLayoutFondo" />
+
         <EditText
             android:id="@+id/tvcorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/et_bg"
             android:hint="Correo Electrónico"
             android:inputType="textEmailAddress"
-            android:padding="16dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:enabled="false"
             android:textColor="@color/login_form_details"
             android:textColorHint="@color/login_form_details"
             app:layout_constraintEnd_toStartOf="@id/guideline_right"
@@ -90,25 +95,27 @@ android:background="@drawable/bg_login"
             android:id="@+id/tvcontraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/et_bg"
             android:hint="Contraseña"
-            android:padding="16dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:enabled="false"
             android:textColor="@color/login_form_details"
             android:textColorHint="@color/login_form_details"
             app:layout_constraintEnd_toStartOf="@id/guideline_right"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
             app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
-
         <EditText
-            android:id="@+id/tvtelefono"
+            android:id="@+id/tvtelefono2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/et_bg"
             android:hint="Telefono"
-            android:padding="16dp"
+            android:padding="10dp"
+            android:textSize="15dp"
             android:inputType="number"
             android:textColor="@color/login_form_details"
             android:textColorHint="@color/login_form_details"
@@ -117,22 +124,32 @@ android:background="@drawable/bg_login"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
             app:layout_constraintTop_toBottomOf="@+id/tvuserREC" />
 
+
+        <ListView
+            android:id="@+id/lvlistar"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/boton_transparente"
+            android:cacheColorHint="@color/login_form_details" />
+
         <Button
             android:id="@+id/btn_resgistar2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
             android:alpha="0.85"
             android:background="@drawable/btn_bg"
-            android:text="Registrar"
+            android:text="Actualizar"
             android:textAllCaps="false"
-            android:textSize="18dp"
             android:textColor="@color/login_form_details_medium"
+            android:textSize="18dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline_right"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline_left"
             app:layout_constraintTop_toBottomOf="@id/tvpassword2" />
-    </LinearLayout>
 
+    </LinearLayout>
 
 </RelativeLayout>

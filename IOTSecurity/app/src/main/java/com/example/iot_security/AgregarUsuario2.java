@@ -1,13 +1,13 @@
 package com.example.iot_security;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -16,18 +16,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.UUID;
 
 public class AgregarUsuario2 extends AppCompatActivity {
     private EditText tnombre;
     private EditText tcorreo;
     private EditText tcontraseña;
+    private EditText tTelefono;
     private Button btregistrar;
 
     private String nombre= "";
     private String correo= "";
     private String contraseña= "";
+  private String Telefono = "";
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
     @Override
@@ -40,7 +41,10 @@ public class AgregarUsuario2 extends AppCompatActivity {
         tnombre=(EditText) findViewById(R.id.tvnombre);
         tcorreo=(EditText) findViewById(R.id.tvcorreo);
         tcontraseña=(EditText) findViewById(R.id.tvcontraseña);
+        tTelefono=(EditText) findViewById(R.id.tvtelefono);
         btregistrar=(Button) findViewById(R.id.btn_resgistar2);
+
+
 
         btregistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,13 +52,18 @@ public class AgregarUsuario2 extends AppCompatActivity {
                 nombre=tnombre.getText().toString();
                 correo=tcorreo.getText().toString();
                 contraseña=tcontraseña.getText().toString();
+                Telefono=tTelefono.getText().toString();
 
 
-                if (!nombre.isEmpty() && !correo.isEmpty() && !contraseña.isEmpty()){
+
+                if (!nombre.isEmpty() && !correo.isEmpty() && !contraseña.isEmpty() &&!Telefono.isEmpty()){
 
                     if(contraseña.length()>=6){
+                        if(Telefono.length() == 9){
                         RegisterUser();
-
+                        }else{
+                            Toast.makeText(AgregarUsuario2.this, "Se requiere 9 digitos de telefono", Toast.LENGTH_SHORT).show();
+                        }
                     }else{
 
                         Toast.makeText(AgregarUsuario2.this, "Contraseña minima 6 caracteres ", Toast.LENGTH_SHORT).show();
@@ -73,13 +82,14 @@ public class AgregarUsuario2 extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Map<String ,Object> map= new HashMap<>();
-                    map.put("nombre", nombre);
-                    map.put("correo", correo);
-                    map.put("contraseña", contraseña);
+                    Persona p = new Persona();
+                    p.setUid(UUID.randomUUID().toString());
+                    p.setNombre(nombre);
+                    p.setCorreo(correo);
+                    p.setContraseña(contraseña);
+                    p.setTelefono(Telefono);
 
-                    String id = mAuth.getCurrentUser().getUid();
-                    mDatabase.child("Usuarios").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    mDatabase.child("Usuarios").child(p.getUid()).setValue(p).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             Toast toast;
@@ -89,6 +99,7 @@ public class AgregarUsuario2 extends AppCompatActivity {
                                     tcontraseña.setText("");
                                     tcorreo.setText("");
                                     tnombre.setText("");
+                                    tTelefono.setText("");
                                     tnombre.requestFocus();
 
                                 }
