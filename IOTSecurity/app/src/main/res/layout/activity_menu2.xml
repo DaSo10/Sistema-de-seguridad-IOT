@@ -18,6 +18,13 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/txtnombrecap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/login_form_details"
+        android:text="Nombre"/>
 
     <ImageView
         android:id="@+id/avatarImage"
@@ -97,7 +104,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAjustes"
+            android:id="@+id/cardGestionarPuerta"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -138,7 +145,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardRanking"
+            android:id="@+id/cardGestionarSistem"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -180,7 +187,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAyuda"
+            android:id="@+id/cardUsuariosCasa"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -221,7 +228,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardUser"
+            android:id="@+id/cardManualUsuario"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -262,7 +269,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardInfo"
+            android:id="@+id/cardContactanos"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"

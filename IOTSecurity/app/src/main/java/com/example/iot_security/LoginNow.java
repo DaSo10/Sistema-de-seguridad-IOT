@@ -36,9 +36,9 @@ public class LoginNow extends AppCompatActivity {
         mAuth= FirebaseAuth.getInstance();
         mDatabase= FirebaseDatabase.getInstance().getReference();
 
-        tcorreo=(EditText) findViewById(R.id.tvuserREC);
-        tcontraseña=(EditText) findViewById(R.id.tvpassword2);
-        btninicio=(Button) findViewById(R.id.btn_Recuperar);
+        tcorreo=(EditText) findViewById(R.id.tvusertest);
+        tcontraseña=(EditText) findViewById(R.id.tvpasswordtest);
+        btninicio=(Button) findViewById(R.id.btn_Recutest);
         Reccontraseña=(TextView)findViewById(R.id.forgot_password);
 
         Reccontraseña.setOnClickListener(new View.OnClickListener() {

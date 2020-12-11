@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecuperarContra"></activity>
+        <activity android:name=".Contactanos"></activity>
+        <activity android:name=".ListaUsuariosCasa" />
+        <activity android:name=".PreguntaCasa" />
+        <activity android:name=".VerPDF" />
+        <activity android:name=".ManualUsuario" />
+        <activity android:name=".GestionarSistema" />
+        <activity android:name=".MenuGP" />
+        <activity android:name=".ConsultarAPuerta" />
+        <activity android:name=".GestionarPuerta" />
+        <activity android:name=".LoginNow" />
+        <activity android:name=".RecuperarContra" />
         <activity android:name=".AgregarUsuario2" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MenuGU" />
@@ -18,7 +28,7 @@
         <activity android:name=".ActualizarUsuario" />
         <activity android:name=".ListaUsuarios" />
         <activity android:name=".Menu" />
-        <activity android:name=".LoginNow">
+        <activity android:name=".LoginTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,7 +19,13 @@
         android:layout_marginRight="-40dp">
 
     </RelativeLayout>
-
+    <TextView
+        android:id="@+id/txtnombrecap2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/login_form_details"
+        android:text="Nombre"/>
 
     <ImageView
         android:id="@+id/avatarImage"
@@ -39,7 +45,7 @@
         android:layout_marginTop="138dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:text="Gestionar Usuarios"
+        android:text="Gestionar Puerta"
         android:textAlignment="center"
         android:textColor="@color/login_form_details"
         android:fontFamily="@font/bunglerlight"
@@ -60,7 +66,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardRegUsuario"
+            android:id="@+id/cardPuerta"
             android:layout_width="20dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -90,10 +96,10 @@
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="@font/bunglerlight"
-                    android:text="Agregar    Usuarios"
+                    android:text="Apertura de Puerta"
                     android:textAlignment="center"
                     android:textColor="@color/purple"
-                    android:textSize="28sp"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -102,7 +108,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardActUsuario"
+            android:id="@+id/cardConsulAperPuerta"
             android:layout_width="20dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
@@ -132,18 +138,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
-                    android:text="Actualizar Usuarios"
+                    android:fontFamily="@font/bunglerlight"
+                    android:text="Consultar Apertura de Puerta"
                     android:textAlignment="center"
                     android:textColor="@color/purple"
                     android:textSize="28sp"
-                    android:fontFamily="@font/bunglerlight"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-
 
 
     </androidx.gridlayout.widget.GridLayout>

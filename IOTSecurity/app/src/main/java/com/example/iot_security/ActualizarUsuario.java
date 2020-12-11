@@ -87,6 +87,8 @@ public class ActualizarUsuario extends AppCompatActivity {
                             Toast.makeText(ActualizarUsuario.this, "se requiere 9 digitos de telefono ", Toast.LENGTH_LONG).show();
                         }
 
+
+
                 }
             }
         });

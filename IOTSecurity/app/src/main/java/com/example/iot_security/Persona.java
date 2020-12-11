@@ -7,6 +7,9 @@ public class Persona {
     private String Correo;
     private String contraseña;
     private String telefono;
+    private String Fecha;
+    private String Estado;
+
 
     public String getTelefono() {
         return telefono;
@@ -48,9 +51,23 @@ public class Persona {
         this.contraseña = contraseña;
     }
 
-    @Override
-    public String toString() {
-        return Nombre;
+    public String getFecha() {
+        return Fecha;
     }
+
+    public void setFecha(String fecha) {
+        Fecha = fecha;
+    }
+
+    public String getEstado() {
+        return Estado;
+    }
+
+    public void setEstado(String estado) {
+        Estado = estado;
+    }
+
+    @Override
+    public String toString() { return Nombre; }
 
 }

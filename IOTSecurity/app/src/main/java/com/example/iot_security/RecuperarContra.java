@@ -33,8 +33,8 @@ public class RecuperarContra extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         mdialog= new ProgressDialog(this);
 
-        mEmailRec= (EditText) findViewById(R.id.tvuserREC);
-        RecP= (Button) findViewById(R.id.btn_Recuperar);
+        mEmailRec= (EditText) findViewById(R.id.tvusertest);
+        RecP= (Button) findViewById(R.id.btn_Recutest);
 
         RecP.setOnClickListener(new View.OnClickListener() {
             @Override
